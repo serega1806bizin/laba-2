@@ -74,7 +74,8 @@ function updateArray() {
 }
 
 function generateRandom() {
-  for (let i = 0; i < 10; i++) {
+  let size = parseInt(prompt("Якого розміру масиву створити?"));
+  for (let i = 0; i < size; i++) {
       addElement(Math.floor(Math.random() * 21) - 10);
   }
 }
@@ -108,7 +109,7 @@ if (!isNaN(num)) {
 }
 
 function generateRandomArray() {
-let size = 10;
+let size = parseInt(prompt("Якого розміру масиву створити?"));
 numbers = Array.from({ length: size }, () => Math.floor(Math.random() * 100));
 updateArray3();
 }
