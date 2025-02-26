@@ -146,7 +146,7 @@ document.getElementById("resultOutput").textContent = `Min: ${min}, Max: ${max}`
 function findElement() {
 let num = parseFloat(prompt("Введіть число для пошуку:"));
 let index = numbers.indexOf(num);
-document.getElementById("resultOutput").textContent = index !== -1 ? `Елемент знайдено на позиції ${index}` : "Елемент не знайдено";
+document.getElementById("resultOutput").textContent = index !== -1 ? `Елемент знайдено на позиції ${index+1}` : "Елемент не знайдено";
 }
 
 function toStringArray() {
