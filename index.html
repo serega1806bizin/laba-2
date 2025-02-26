@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дослідження масивів та розрахунків</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container container-1">
+      <h2>Розрахунок суми</h2>
+      <p class="formula">Формула: <img src="image.png" alt="Математичний вираз"></p>
+      <label for="a">Введіть значення a: </label>
+      <input type="number" id="a" value="1" class="input-number-1">
+      <button onclick="calculateSum()">Розрахувати</button>
+      <div class="result" id="result"></div>
+      <button onclick="nextTask()">Перейти на наступне завдання</button>
+  </div>
+
+  <div class="container container-2" style="display: none;">
+      <h2>Аналіз масиву</h2>
+      <div class="array-container" id="arrayContainer">
+          <button onclick="addElement()">+</button>
+      </div>
+      <button onclick="generateRandom()">Випадковий масив</button>
+      <button onclick="analyzeArray()">Аналізувати</button>
+      <div class="result" id="arrayResult"></div>
+      <button onclick="goToPreviousPage()">Назад</button>
+      <button onclick="goTo3Page()">Наступне завдання</button>
+  </div>
+
+  <div class="container container-3" style="display: none;">
+    <h1>Дослідження масивів в JavaScript</h1>
+    <input type="number" id="numberInput" placeholder="Введіть число" class="input-number">
+    <button onclick="addNumber()">Додати</button>
+    <button onclick="generateRandomArray()">🎲 Рандомний масив</button>
+    <button onclick="removeFirst()">Видалити перший</button>
+    <button onclick="removeLast()">Видалити останній</button>
+    <button onclick="sortArray()">Сортувати</button>
+    <button onclick="shuffleArray()">Перемішати</button>
+    <button onclick="reverseArray()">Реверс</button>
+    <button onclick="uniqueArray()">Унікальні</button>
+    <button onclick="minMaxArray()">Min/Max</button>
+    <button onclick="findElement()">Знайти елемент</button>
+    <button onclick="toStringArray()">В рядок</button>
+    <p id="arrayOutput">Масив: []</p>
+    <p id="resultOutput"></p>
+    <button onclick="goTo2Page()">Назад</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
