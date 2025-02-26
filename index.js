@@ -74,7 +74,6 @@ function updateArray() {
 }
 
 function generateRandom() {
-  arrayContainer.innerHTML = "";
   for (let i = 0; i < 10; i++) {
       addElement(Math.floor(Math.random() * 21) - 10);
   }
