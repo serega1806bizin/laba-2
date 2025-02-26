@@ -22,12 +22,19 @@ function calculateSum() {
       let sumSteps = "";
       let terms = [];
 
+      if (isNaN(a)) {
+          alert("Введіть число, а не щось незрозуміле");
+          return;
+      }
+
       for (let k = 1; k <= 10; k++) {
           let term = Math.pow(a + 1, k);
           sum += term;
           terms.push(term);
           steps += `Крок ${k}: (${a} + 1)^${k} = ${term}<br>`;
       }
+
+      
 
       sumSteps = terms.join(" + ") + " = " + sum;
 
@@ -45,6 +52,7 @@ function addElement(value = ""){
   div.classList.add("array-item");
   let input = document.createElement("input");
   input.value = value;
+  input.type = "number";
   input.onchange = updateArray;
   div.appendChild(input);
  
